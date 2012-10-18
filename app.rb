@@ -95,13 +95,9 @@ get '/stream', provides: 'text/event-stream' do
     connection.streams << out
     sse(:user_list)
 
-    if env["HTTP_LAST_EVENT_ID"]
-      last_seen = env["HTTP_LAST_EVENT_ID"].to_i
-      $stderr.puts "last seen: #{last_seen}"
-      $stderr.flush
-      settings.history.each do |payload|
-        send_sse(payload, out) if payload.last > last_seen
-      end
+    last_seen = env["HTTP_LAST_EVENT_ID"].to_i
+    settings.history.each do |payload|
+      send_sse(payload, out) if payload.last > last_seen and payload.first != :user_list
     end
 
     out.callback do
