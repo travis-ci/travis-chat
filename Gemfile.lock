@@ -1,0 +1,56 @@
+GIT
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 38f71248f839b95f6d17747a2c177bdd83f95f78
+  specs:
+    sinatra (1.4.0)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+
+GIT
+  remote: git://github.com/travis-ci/travis-sso.git
+  revision: 0882922860e9b29d98fd2a757b60e31b91624bf1
+  specs:
+    travis-sso (0.0.1)
+      multi_json
+      rack
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.3.3)
+    daemons (1.1.9)
+    eventmachine (1.0.0)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    multi_json (1.3.6)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    rack-ssl (1.3.2)
+      rack
+    sass (3.2.1)
+    slim (1.3.2)
+      temple (~> 0.5.0)
+      tilt (~> 1.3.3)
+    temple (0.5.3)
+    thin (1.5.0)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coffee-script
+  rack-ssl
+  sass
+  sinatra!
+  slim
+  thin
+  travis-sso!

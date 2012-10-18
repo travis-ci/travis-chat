@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title Travis CI Chat
+
+    meta charset="utf-8"
+    meta name="connection.id" value=connection.id
+
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+
+    link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet"
+    link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet"
+    link href="http://twitter.github.com/bootstrap/assets/css/docs.css" rel="stylesheet"
+    link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet"
+
+    coffee:
+      id   = $('meta[name="connection.id"]').attr('value')
+      es   = new EventSource("/stream?id=#{id}")
+      last = 0
+
+      es.addEventListener 'user_list', (e) =>
+        $('#users #list').html e.data
+
+      es.onmessage = (e) =>
+        console.log e
+        $('#chat').append(e.data + "\n")
+        $('html, body').animate scrollTop: $(document).height()
+
+      $("form").live "submit", (e) =>
+        msg = $('#msg')
+        $.post "/", msg: msg.val(), id: id
+        msg.val('')
+        msg.focus()
+        e.preventDefault()
+
+    style
+      |
+        @-webkit-keyframes fadein { 0% { opacity: 0 } 100% { opacity: 1 } }
+        @-moz-keyframes    fadein { 0% { opacity: 0 } 100% { opacity: 1 } }
+        @keyframes         fadein { 0% { opacity: 0 } 100% { opacity: 1 } }
+
+    sass:
+      #msg
+        width: 100%
+      .container
+        padding-bottom: 100px
+      #users
+        position: fixed
+      .message
+        -webkit-animation: fadein 0.5s linear
+        -moz-animation: fadein 0.5s linear
+        animation: fadein 0.5s linear
+
+  body
+    .container
+      .row
+        #chat.span9
+        #users.span12
+          #list.span3.pull-right== users
+      form.navbar.navbar-fixed-bottom
+        input id='msg' placeholder='type message here...'
