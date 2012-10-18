@@ -1,4 +1,5 @@
 require 'travis/sso'
+require 'rack/ssl'
 require 'sinatra'
 require 'slim'
 
