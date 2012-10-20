@@ -2,6 +2,7 @@ require 'travis/sso'
 require 'rack/ssl'
 require 'sinatra'
 require 'slim'
+require 'rinku'
 
 class Connection
   attr_reader :user, :streams, :id
@@ -54,7 +55,7 @@ helpers do
   attr_reader :connection
 
   def sse(type, locals = {})
-    content = slim(type, locals: locals)
+    content = Rinku.auto_link(slim(type, locals: locals))
     payload = [type, content, settings.count]
     settings.count += 1
     settings.history << payload
