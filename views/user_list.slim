@@ -2,7 +2,7 @@
   .row
     .span1
       .pull-right
-        img.gravatar src="http://www.gravatar.com/avatar/#{user.gravatar_id}?s=28&r=r"
+        img.gravatar src="//www.gravatar.com/avatar/#{user.gravatar_id}?s=28&r=r"
     .span2 style="margin-left:5px"
       div.text-info style="margin-bottom:-5px;margin-top:-3px" = user.login
-      small = user.name
+      small = user.name || user.log
