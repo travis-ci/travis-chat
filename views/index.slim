@@ -18,7 +18,6 @@ html
         $('#users #list').html e.data
 
       es.onmessage = (e) =>
-        console.log e
         $('#chat').append(e.data + "\n")
         $('html, body').animate scrollTop: $(document).height()
 
