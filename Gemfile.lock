@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sinatra/sinatra.git
-  revision: 38f71248f839b95f6d17747a2c177bdd83f95f78
+  revision: 49eac3a645add2d1fb1698ce4a250896ff0af1b4
   specs:
     sinatra (1.4.0)
       rack (~> 1.3, >= 1.3.6)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-sso.git
-  revision: b4df2ace0ce820f7b44f7af6e7a53336a0e5b074
+  revision: 0cf100832e8d18d2e5a36af5fcf7d25113cf89b0
   specs:
     travis-sso (0.0.1)
       multi_json
