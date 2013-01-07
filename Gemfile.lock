@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-sso.git
-  revision: 0cf100832e8d18d2e5a36af5fcf7d25113cf89b0
+  revision: 4a3ee3ff5e138c410b5a1849935d84b62b393b02
   specs:
     travis-sso (0.0.1)
       multi_json
