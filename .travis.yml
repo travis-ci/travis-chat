@@ -3,9 +3,6 @@ addons:
   deploy:
     provider: heroku
     api_key:
-      secure: |-
-        cfsoUDHFkCvyteR9c+peZiHn5aXaUJMd9NF7C2zDoMio8o1NdOfV1mV4Bkf4
-        geXpuNuqvxB7yZzonr56pZOUnr0R1SiYj2unCvn82OEA1PDmzgrSnHHLVsa0
-        SGhOvTgx3W2xy6Cbl/J284DayGLDLum/DAxbwJsEbl0B3rBjhlU=
+      secure: "cGlMo7lH6yfeHPD8Qvyj7IrRQnJ4xq9TgmxKKnU9vr7kLEIyQ6+QW1Jzr7fL\nT213AbDrNhjE999vtNDMhyZ1VUb3ekVlRdi0i8JVsZzgAfXaXMvaWOFLubHf\n03jZkCxgXlM1LjKDZIaIjN+rMCAeHhjHgzL650hoMZKct5y4T7c="
 after_success:
   - "echo 1"
