@@ -2,9 +2,9 @@
 env:
   global:
     secure: |-
-      YvB44gPpgN1ZBWmuOJ7q/StB/fwwMRDCgD/zZZekjHwwGSZJMwfBXVEpyxXi
-      8BH50GqRojr0QMBrOPL6CKD81+attndJi+24MP095ZYcr1PuhEb204vBwqhP
-      xCaMhfoHuUrwd6R64IwTR/54AXnvOYOo6dIjtFEDZo/fp84oPEI=
+      cfsoUDHFkCvyteR9c+peZiHn5aXaUJMd9NF7C2zDoMio8o1NdOfV1mV4Bkf4
+      geXpuNuqvxB7yZzonr56pZOUnr0R1SiYj2unCvn82OEA1PDmzgrSnHHLVsa0
+      SGhOvTgx3W2xy6Cbl/J284DayGLDLum/DAxbwJsEbl0B3rBjhlU=
 after_success:
 - "gem install dpl"
 - "dpl --provider=heroku --api-key=$heroku_key"
