@@ -1,10 +1,9 @@
 ---
-env:
-  global:
-    secure: |-
-      cfsoUDHFkCvyteR9c+peZiHn5aXaUJMd9NF7C2zDoMio8o1NdOfV1mV4Bkf4
-      geXpuNuqvxB7yZzonr56pZOUnr0R1SiYj2unCvn82OEA1PDmzgrSnHHLVsa0
-      SGhOvTgx3W2xy6Cbl/J284DayGLDLum/DAxbwJsEbl0B3rBjhlU=
-after_success:
-- "gem install dpl"
-- "dpl --provider=heroku --api-key=$heroku_key"
+addons:
+  deploy:
+    provider: heroku
+    api_key:
+      secure: |-
+        cfsoUDHFkCvyteR9c+peZiHn5aXaUJMd9NF7C2zDoMio8o1NdOfV1mV4Bkf4
+        geXpuNuqvxB7yZzonr56pZOUnr0R1SiYj2unCvn82OEA1PDmzgrSnHHLVsa0
+        SGhOvTgx3W2xy6Cbl/J284DayGLDLum/DAxbwJsEbl0B3rBjhlU=
