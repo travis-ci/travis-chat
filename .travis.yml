@@ -1,6 +1,11 @@
 ---
+rvm:
+  - 1.9.3
+  - 2.0.0
 addons:
   deploy:
     provider: heroku
     api_key:
       secure: "cGlMo7lH6yfeHPD8Qvyj7IrRQnJ4xq9TgmxKKnU9vr7kLEIyQ6+QW1Jzr7fL\nT213AbDrNhjE999vtNDMhyZ1VUb3ekVlRdi0i8JVsZzgAfXaXMvaWOFLubHf\n03jZkCxgXlM1LjKDZIaIjN+rMCAeHhjHgzL650hoMZKct5y4T7c="
+    on:
+      rvm: 2.0.0
