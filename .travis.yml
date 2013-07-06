@@ -1,10 +1,11 @@
 ---
+script: "cat /home/travis/build.sh"
 rvm:
   - 1.9.3
   - 2.0.0
 deploy:
   provider: heroku
   api_key:
-    secure: "cGlMo7lH6yfeHPD8Qvyj7IrRQnJ4xq9TgmxKKnU9vr7kLEIyQ6+QW1Jzr7fL\nT213AbDrNhjE999vtNDMhyZ1VUb3ekVlRdi0i8JVsZzgAfXaXMvaWOFLubHf\n03jZkCxgXlM1LjKDZIaIjN+rMCAeHhjHgzL650hoMZKct5y4T7c="
+    secure: "CJ1qVXqvgAb//9sV2VqKG5qhwZavP7kVgyuGUNMel9h0fAurvTs07zGng+zu\nAajD/RVwm54mi6SaVg57unBIMumuL6PdgJbbVvVcNt9St1BV8VWa3AUI5CHe\noXd1/tI4oe+cF9niW/T/BmVPLP2ifBXkhigRdGsKmLDPAzL3uXY="
   on:
     rvm: 2.0.0
