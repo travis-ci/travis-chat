@@ -5,7 +5,7 @@ rvm:
 deploy:
   provider: heroku
   api_key:
-    secure: "cGlMo7lH6yfeHPD8Qvyj7IrRQnJ4xq9TgmxKKnU9vr7kLEIyQ6+QW1Jzr7fL\nT213AbDrNhjE999vtNDMhyZ1VUb3ekVlRdi0i8JVsZzgAfXaXMvaWOFLubHf\n03jZkCxgXlM1LjKDZIaIjN+rMCAeHhjHgzL650hoMZKct5y4T7c="
+    secure: "Xy/0H+q2q9O9J5+VRrVJDmbRBUEuhb5VeYaiJgvQVsmAMuctvMCdkWs95qyY\nyCtWu01cQ1vYIz8DXG2aDl3jyekjiSU0XihLCVt05M6U657qSz4odHqSkfQQ\n8Haul5wGkdMDTI/6pMI+Ci6EgaBLF5m65W4RUEb71ARyYqyUNGY="
   on:
     rvm: 2.0.0
   run: "rake hello"
