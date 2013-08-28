@@ -1,12 +1,13 @@
----
 rvm:
-  - 1.9.3
-  - 2.0.0
+- 1.9.3
+- 2.0.0
 deploy:
-  provider: heroku
-  api_key:
-    secure: "Xy/0H+q2q9O9J5+VRrVJDmbRBUEuhb5VeYaiJgvQVsmAMuctvMCdkWs95qyY\nyCtWu01cQ1vYIz8DXG2aDl3jyekjiSU0XihLCVt05M6U657qSz4odHqSkfQQ\n8Haul5wGkdMDTI/6pMI+Ci6EgaBLF5m65W4RUEb71ARyYqyUNGY="
+  provider: cloudfoundry
+  target: https://api.de.a9s.eu
+  username: konstantin@travis-ci.org
+  password:
+    secure: ckcUmSp6K6judqODmx4tIx/c848ZU3O1J4vXWcvCxSAzqzz3bOWf5Upwg46VZP4mLPksjdfNE+7RahC8QPh3fvcge+2F7X9F9Prux8Zgk4sCkGButoRB0a9gIJUcyhj2ZUqwds7TES055ONwZRjl8md7QWX3VvTvv0DjVqn1E04=
+  organization: konstantin_travis-ci_org
+  space: default
   on:
-    rvm: 2.0.0
-  run: "rake hello"
-  edge: true
+    repo: travis-ci/travis-chat

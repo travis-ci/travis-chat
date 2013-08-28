@@ -1,0 +1,8 @@
+---
+applications:
+- name: travis-chat
+  memory: 128M
+  instances: 1
+  host: travis-chat
+  domain: de.a9sapp.eu
+  path: .
