@@ -11,3 +11,4 @@ deploy:
   space: default
   on:
     repo: travis-ci/travis-chat
+    branch: anynines
