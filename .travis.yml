@@ -9,6 +9,7 @@ deploy:
     secure: ckcUmSp6K6judqODmx4tIx/c848ZU3O1J4vXWcvCxSAzqzz3bOWf5Upwg46VZP4mLPksjdfNE+7RahC8QPh3fvcge+2F7X9F9Prux8Zgk4sCkGButoRB0a9gIJUcyhj2ZUqwds7TES055ONwZRjl8md7QWX3VvTvv0DjVqn1E04=
   organization: konstantin_travis-ci_org
   space: default
+  edge: true
   on:
     repo: travis-ci/travis-chat
     branch: anynines
